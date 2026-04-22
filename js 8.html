@@ -1,0 +1,21 @@
+<html>
+<head><title>button click style</title></head>
+<style>
+body{
+	background-color:red;
+	padding:10px;
+	}
+</style>
+<body>
+	<p id="paragraphe" style="color: black;text-align: center; width:100px;"> CMC
+	</p>
+	<button onclick="alert(document.getElementById('paragraphe').innerHTML)">
+	Afficher le texte de CMC</button> <br></br>
+	<button onclick="alert(document.getElementById('paragraphe').style.color)">
+	Afficher le couleur de CMC</button> <br></br>
+	<button onclick="alert(document.getElementById('paragraphe').style.textAlign)">
+	Afficher l'alignement de CMC</button> <br></br>
+	<button onclick="alert(document.getElementById('paragraphe').style.width)">
+	Afficher le largeur de CMC</button>
+</body>
+</html>

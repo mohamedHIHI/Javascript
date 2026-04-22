@@ -1,0 +1,16 @@
+<input type="text" id="champ1" >
+<input type="text" id="champ2" >
+
+<button onclick="permuter()">permuter</button>
+
+<script>
+function permuter() {
+ 
+    const input1 = document.getElementById('champ1');
+    const input2 = document.getElementById('champ2');
+
+    let temp = input1.value;
+
+    input1.value = input2.value; 
+}
+</script>

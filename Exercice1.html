@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>EXERCICE1</title>
+</head>
+<body>
+
+    <input type="number" id="n1" placeholder="entrer le 1er nombre">
+    <span> + </span>
+    <input type="number" id="n2" placeholder="entrer le 2eme nombres">
+    <span> = </span>
+    <label id="resultat"></label>
+    <button onclick="calculerSomme()">Calculer</button>
+
+    <script>
+        function calculerSomme() {
+          
+            let champ1 = document.getElementById('n1').value;
+            let champ2 = document.getElementById('n2').value;
+
+           
+            let num1 = parseFloat(champ1);
+            let num2 = parseFloat(champ2);
+
+            
+            if (num1 && num2) {
+                let somme = num1 + num2;
+                
+                document.getElementById('resultat').innerText = somme;
+            } else {
+                alert("entrer les nombres");
+            }
+        }
+    </script>
+
+</body>
+</html>

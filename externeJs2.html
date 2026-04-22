@@ -1,0 +1,22 @@
+<html>
+<head> <title> Calculatrice radio button</title> 
+<script type="text/javascript" src="externJS.js"> </script>
+</head>
+<body>
+<form>
+	<label>N1: </label> <input type="number" id="N1" /><br>
+	<label>N2: </label> <input type="number" id="N2" /><br>
+	<fieldset> 
+		<legend> Opérations :</legend>
+		<input type="radio" name="op" id="som" value="somme">
+		<label for="som">Somme </label><br>
+		<input type="radio" name="op" id="sous" value="soustraction">
+		<label for="sous">soustraction </label><br>
+		<input type="radio" name="op" id="div" value="division">
+		<label for="div">division </label><br>
+	</fieldset><br>
+	<button type="button" onclick="egal()">=</button><br>
+	<label>Résultat: </label><label id="resultat">...</label>
+</form>
+</body>
+</html>

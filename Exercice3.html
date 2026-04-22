@@ -1,0 +1,29 @@
+<html>
+<body>
+<input type="text" id="complet" placeholder="Ex:Jean Dupont">
+<button onclick="separerNomPrenom()">Séparer</button>
+
+<p>Prénom : <label id="labelPrenom"></label></p>
+<p>Nom : <label id="labelNom"></label></p>
+<script>
+function separerNomPrenom() {
+  
+    const pleinNom = document.getElementById('complet').value.trim();
+  
+    const indexEspace = pleinNom.indexOf(" ");
+
+    if (indexEspace !== -1) {
+     
+        const prenom = pleinNom.slice(0, indexEspace);
+   
+        const nom = pleinNom.slice(indexEspace + 1);
+
+        document.getElementById('labelPrenom').textContent = prenom;
+        document.getElementById('labelNom').textContent = nom;
+    } else {
+        alert("ERROR.");
+    }
+}
+</script>
+</body>
+</html>

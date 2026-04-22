@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>class</title>
+</head>
+<body>
+
+    <script>
+	class Animal{
+	constructor(nom,espece){
+	this.nom = nom;
+	this.espece = espece;}
+	afficher(){
+	return `${this.nom} est un ${this.espece}`;}}
+	let chat = new Animal("Miau","Chat");
+	console.log(chat.afficher());
+	//un classe est une façon plus moderne de définir un objet avec des méthodes (afficher()).
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>littérale d'objet</title>
+</head>
+<body>
+
+    <script>
+	// method 1
+	let personne ={
+	nom:"Ali",
+	age:25,
+	ville:"Casablanca"
+	};
+	console.log(personne.nom);
+	console.log(personne["age"]);
+	console.log(personne.ville);
+	// method2
+	let voiture = new Object();
+	voiture.marque = "Toyota";
+	voiture.modele = "Corolla";
+	voiture.annee = 2022;
+	console.log(voiture.marque);
+	console.log(voiture.modele);
+	console.log(voiture.annee);
+    </script>
+
+</body>
+</html>

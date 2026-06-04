@@ -1,0 +1,11 @@
+ <html>
+<head><title>insertadjacent html</title></head>
+<body>
+<div id ="zone"><p>Paragraphe de base </p> </div>
+<button onclick="ajouter()">"Ajouter une alerte<button>
+<script>
+function ajouter(){
+var d1=document.getElementById("zone");
+d1.insertAdjacentHTML("afterend","<p id ='fd10'>NOUVel element apres div </p>")
+}
+</script></body></html>

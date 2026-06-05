@@ -1,0 +1,22 @@
+<html lang="fr"><head><meta charset="UTF-8"><title>Document</title><style>
+#match{display:none;}
+#msg{display:none;}
+</style>
+<script>
+function AfficheImage(){
+document.getElementById("match").style.display="block";
+setTimeout(AfficheMessage,2000);}
+function AfficheMessage(){
+document.getElementById("msg").style.display="block";
+setTimeout(VersPgGoogle,5000);}
+function VersPgGoogle(){
+window.location.href="https://www.google.fr";}
+</script></head>
+<body onload="setTimeout(AfficheImage,1000)">
+<div id="match">
+<img src="images/match-flame.gif">
+</div>
+<div id="msg">
+Information pour les DEV105 et DEV102 et DEV101 <br>
+<mark>Premier contrôle de ce module sera la semaine prochaine</mark>
+</div></body></html>

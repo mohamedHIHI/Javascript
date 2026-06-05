@@ -1,0 +1,11 @@
+<html lang="fr"><head><meta charset="UTF-8"><title>Event Form</title>
+<link rel="stylesheet" href="at1.cs"></head><body>
+<input type="button" id="cacher" value="Cliquez pour cacher le texte"/>
+<div id="text">Texte</div>
+<input type="button" id="masquer" value="Cliquez pour masquer"></body>
+<script>
+document.getElementById("cacher").onclick = function () {
+document.getElementById("text").style.display = "none";};
+document.getElementById("masquer").onclick = function () {
+this.style.display = "none";};
+</script></html>

@@ -1,0 +1,52 @@
+<html><head><meta charset="UTF-8"><title>Formation</title>
+<script>
+function Verif(){
+var nom=document.getElementById("nom").value;
+var cin=document.getElementById("cin").value;
+var email=document.getElementById("email").value;
+if(nom=="" || cin=="" || email==""){
+alert("Remplir tous les champs");
+return false;}
+var regNom=/^[A-Z]{3,15}\s[A-Z][a-z]{2,14}$/;
+if(!regNom.test(nom)){
+alert("Nom et prénom incorrect");
+return false;}
+var regCin=/^[A-Za-z]{1,2}[0-9]{3,6}$/;
+if(!regCin.test(cin)){
+alert("CIN incorrect");
+return false;}
+if(email.indexOf("@")==-1){
+alert("Email incorrect");
+return false;}
+alert("Inscription achevée !!!");
+return true;}
+function Annuler(){
+document.getElementById("f").reset();}
+</script></head><body>
+<form id="f" onsubmit="return Verif()">
+<fieldset>
+<legend>Informations Etudiant</legend>
+Nom et Prénom :
+<input type="text" id="nom"><br><br>
+CIN :
+<input type="text" id="cin"><br><br>
+Adresse e-mail :
+<input type="text" id="email">
+</fieldset><br><fieldset>
+<legend>Type de Formation</legend>
+Niveau :
+<input type="radio" name="niv" checked> Secondaire
+<input type="radio" name="niv"> Universitaire
+<input type="radio" name="niv"> Autre
+<br><br>
+Modules de formation :
+<br>
+<select multiple size="4">
+<option>Bureautique</option>
+<option>SE et Réseaux</option>
+<option>TIC</option>
+<option>Développement Web</option>
+</select><br><br>
+<input type="submit" value="Envoyer">
+<input type="button" value="Annuler" onclick="Annuler()"></fieldset>
+</form></body></html>

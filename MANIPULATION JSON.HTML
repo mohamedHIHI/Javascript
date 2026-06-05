@@ -1,0 +1,15 @@
+<html><head><title>JSON.parse et JSON.stringify</title>
+</head><body><h2>Manipulation JSON en JavaScript</h2>
+<button onclick="parseJ()">JSON to Objet (JSON.parse)</button>
+<button onclick="stringifyJ()">Objet to JSON (JSON.stringify)</button>
+<script>
+function parseJ() {
+let jsonText = '{"nom":"Sara","age":22,"ville":"Rabat"}';
+let obj = JSON.parse(jsonText);
+alert("Nom : "+ obj.nom +"\n"+"Age : " + obj.age + "\n"+
+"Ville : " + obj.ville);}
+function stringifyJ() {
+let personne={nom:"Yassine",age:30,actif: true};
+let jsonData=JSON.stringify(personne);
+alert("Chaine JSON:\n" + jsonData);}
+</script></body></html>

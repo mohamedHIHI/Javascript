@@ -1,0 +1,27 @@
+<script>
+function tt() {
+  let T = [
+    {"ISBN":1102,"Titre":"Livre1","nomAuteur":"Khalid ibrahim"},
+    {"ISBN":1108,"Titre":"Livre2","nomAuteur":"Intissar naim"},
+    {"ISBN":1199,"Titre":"Livre3","nomAuteur":"Adam jaouhari"}
+  ];
+
+  for (var i = 0; i < T.length; i++) {
+    document.getElementById("t").insertAdjacentHTML(
+      "beforeend",
+      "<tr><td>" + T[i]["ISBN"] + "</td><td>" + T[i]["Titre"] + "</td><td>" + T[i]["nomAuteur"] + "</td></tr>");
+  }
+}
+</script>
+
+<body onload="tt()">
+ <table border="1" id="t">
+<tr>
+	<th>ISBN</th>
+	<th>Titre</th>
+	<th>nomAuteur</th>
+</tr>
+</table>
+</body>
+
+</html>

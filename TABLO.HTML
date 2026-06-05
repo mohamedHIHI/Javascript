@@ -1,0 +1,18 @@
+<html><head><title>Tableau</title></head>
+<body>
+
+<button onclick="ajouter()">Ajouter</button>
+<table border="1" id="tableau">
+<tr>
+<th>Nom</th>
+<th>Age</th>
+</tr>
+</table>
+</body>
+<script>
+function ajouter() {
+let nom = prompt("nom")
+let age = prompt("age")
+document.getElementById("tableau").insertAdjacentHTML("beforeend","<tr><td>"+nom+"</td><td>"+age+"</td> </tr>")
+}
+</script></html>

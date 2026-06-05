@@ -1,0 +1,18 @@
+<html><head><title>manipulation json</title></head>
+<body onload="fct()"><label>conversion:</label>
+<select id="s1"></select>
+</body>
+<script>
+function fct(){
+var t = [
+{"cc":"MAD","symbol":"MAD","name":"Moroccan dirham"},
+{"cc":"EUR","symbol":"\u20ac","name":"European Euro"},
+{"cc":"USD","symbol":"US$","name":"United States dollar"},
+{"cc":"AED","symbol":"\u062f.\u0625;","name":"UAE dirham"}
+];
+for(var i = 0; i < t.length; i++){
+var f = document.createElement("option");
+f.innerHTML = t[i].name; 
+ document.getElementById("s1").appendChild(f);}
+}
+</script></html>

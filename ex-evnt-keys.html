@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>exercice</title></head>
+<body>
+<form>
+<label> Ecrire un id</label>
+<input type="text" id="id">
+<label> choisir une ville </label>
+<select>
+	<option>Rabat</option>
+	<option>Tamesna</option>
+	<option>Meknes</option>
+</select>
+<button type="button"> Afficher </button>
+<label id="resultat"></label>
+</form>
+</body>
+<script>
+let text = document.getElementById("id");
+text.addEventListener("focus", function() {
+    text.style.padding = "20px";
+    text.style.borderRadius = "0";
+    text.style.backgroundColor = "white";
+});
+
+text.addEventListener("blur", function() {
+    text.style.borderRadius = "50%";
+
+});
+
+text.addEventListener("mouseout", function() {
+    text.style.backgroundColor = "yellow";
+
+});
+text.addEventListener("keyup", function(event){
+
+    if(event.key == "A" || event.key == "a" ){
+        alert("A interdite ! essayer encore !!");
+    event.preventDefault();
+}});
+</script>
+</html>

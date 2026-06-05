@@ -1,0 +1,10 @@
+<html><body><input type="text" id="txt"></body>
+<script>
+let txt = document.getElementById("txt");
+txt.addEventListener("focus", function(){
+txt.style.border = "2px solid green";});
+txt.addEventListener("blur", function(){
+txt.style.border = "2px solid red";
+});
+</script>
+</html>

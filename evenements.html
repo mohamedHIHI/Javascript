@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>événements clavier</title>
+    <style>
+        #log { margin-top: 10px; font-family: monospace; }
+    </style>
+</head>
+<body>
+
+<h3>Tester les événements du clavier</h3>
+<input type="text" id="champ" placeholder="Tape quelque chose...">
+<div id="log"></div>
+
+<script>
+const input = document.getElementById("champ");
+const log = document.getElementById("log");
+input.addEventListener("keydown", function(event) {
+    log.innerHTML += "keydown: " + event.key + "<br>";});
+    input.addEventListener("keypress", function(event) {
+        log.innerHTML += "keypress: " + event.key + "<br>";});
+        input.addEventListener("keyup", function(event) {
+            log.innerHTML += "keyup: " + event.key + "<br>";});
+</script>
+
+</body>
+</html>

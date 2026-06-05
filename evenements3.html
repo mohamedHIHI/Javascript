@@ -1,0 +1,15 @@
+<html>
+<head><title> evenements multiples sur un element</title></head>
+<body> <h3> clic,survol,sortie </h3> 
+<button id="btn"> passe/clique ici </button>
+<script>
+let b = document.getElementById("btn");
+b.addEventListener("click",f1);
+b.addEventListener("mouseover",f2);
+b.addEventListener("mouseout",f3);
+	function f1() {alert("VOUS AVEZ CLIQUE!!");}
+	function f2() {b.style.background ="red";}
+	function f3() {b.style.background ="white";}
+</script>
+</body>
+</html>	

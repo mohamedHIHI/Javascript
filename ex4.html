@@ -1,0 +1,13 @@
+<html><body>
+<form id="form"><input type="text" id="nom"><button type="submit">Envoyer</button></form>
+</body>
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+ let nom = document.getElementById("nom").value;
+ if (nom === ""){
+ e.preventDefault();
+ alert("Le champ est vide !");
+}
+});
+</script>
+</html>

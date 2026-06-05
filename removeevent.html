@@ -1,0 +1,10 @@
+<html><head><title>sup event</title></head>
+<body><p id="paragraphe">element avec evn "mouseover"</p>
+<button id="btn" onclick="SupprimerEvent()">Sup evn</button>
+<script>
+let p=document.getElementById("paragraphe");
+p.addEventListener("mouseover",fct1);
+function fct1() {alert("je suis le paragraphe!");}
+function SupprimerEvent(){p.removeEventListener("mouseover",fct1);
+alert("Evenement supprime!");}
+</script></body></html>
